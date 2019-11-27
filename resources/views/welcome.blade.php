@@ -1,105 +1,38 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts/master')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel123</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-    <!-- Styles -->
-    <style>
-        html,
-        body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links>a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-
-    </style>
-</head>
-
-<body>
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-            <a href="{{ url('/home') }}">Home</a>
-            @else
-            <a href="{{ route('login') }}">Login</a>
-
-            @if (Route::has('register'))
-            <a href="{{ route('register') }}">Register</a>
-            @endif
-            @endauth
-        </div>
-        @endif
-
-        <div class="content">
-            <div class="title m-b-md">
-                Laravel
+@section('content')
+<section class="container mx-auto py-20 bg-gray-100">
+    <div class="flex flex-wrap -mx-2">
+        <div class="w-full sm:w-1/3 px-2">
+            <div class="border">
+                <img src="https://via.placeholder.com/400x300" alt="" class="w-full">
+                <h3 class="text-xl px-4 py-2 font-medium text-2xl text-center">Book 1 15$</h3>
+                <p class="px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum
+                    ullam non
+                    sequiquos odit!</p>
+                <a href="#" class="w-full block bg-blue-500 text-white py-4 text-center">Buy Now</a>
             </div>
-
-            <div class="links">
-                <a href="https://laravel.com/docs">Docs</a>
-                <a href="https://laracasts.com">Laracasts</a>
-                <a href="https://laravel-news.com">News</a>
-                <a href="https://blog.laravel.com">Blog</a>
-                <a href="https://nova.laravel.com">Nova</a>
-                <a href="https://forge.laravel.com">Forge</a>
-                <a href="https://vapor.laravel.com">Vapor</a>
-                <a href="https://github.com/laravel/laravel">GitHub</a>
+        </div>
+        <div class="w-full sm:w-1/3 px-2">
+            <div class="border">
+                <img src="https://via.placeholder.com/400x300" alt="" class="w-full">
+                <h3 class="text-xl px-4 py-2 font-medium text-2xl text-center">Book 1 15$</h3>
+                <p class="px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum
+                    ullam non
+                    sequiquos odit!</p>
+                <a href="#" class="w-full block bg-blue-500 text-white py-4 text-center">Buy Now</a>
+            </div>
+        </div>
+        <div class="w-full sm:w-1/3 px-2">
+            <div class="border">
+                <img src="https://via.placeholder.com/400x300" alt="" class="w-full">
+                <h3 class="text-xl px-4 py-2 font-medium text-2xl text-center">Book 1 15$</h3>
+                <p class="px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum
+                    ullam non
+                    sequiquos odit!</p>
+                <a href="#" class="w-full block bg-blue-500 text-white py-4 text-center">Buy Now</a>
             </div>
         </div>
     </div>
-</body>
-
-</html>
+</section>
+@endsection
