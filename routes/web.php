@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'BooksController@index');
+// Route::get('/todos/{todo}/edit', 'TodoController@edit')->name('todo.edit');
+// Route::get('/todos/{todo}/{slug}', 'TodoController@show')->name('todo.show');
