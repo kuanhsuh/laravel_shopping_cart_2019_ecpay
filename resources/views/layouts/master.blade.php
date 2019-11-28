@@ -20,12 +20,20 @@
             <img src="https://via.placeholder.com/150x60" alt="">
             <ul class="flex">
                 <li class="mr-4 uppercase">Shop</li>
-                <li class="mr-4 uppercase">Carts</li>
+                <li class="mr-4 uppercase"><a href="/cart">Carts
+                    <span class="p-2 bg-blue-700 text-white rounded">
+                        @if(session()->has('cart'))
+                            {{session()->get('cart')->totalQty}}
+                        @else
+                            0
+                        @endif
+                    </span>
+                </a>
+                </li>
                 <li class="mr-4 uppercase">Orders</li>
             </ul>
         </div>
     </nav>
-
     @yield('content')
 </body>
 
