@@ -9,7 +9,7 @@
                 <img src="https://via.placeholder.com/400x300" alt="" class="w-full">
             <h3 class="text-xl px-4 py-2 font-medium text-2xl text-center">{{ $book->title}}{{ $book->price}}$</h3>
             <p class="px-4 py-2">{{ $book->description}}</p>
-                <a href="#" class="w-full block bg-blue-500 text-white py-4 text-center">Buy Now</a>
+                <a href="/add-to-cart/{{$book->id}}" class="w-full block bg-blue-500 text-white py-4 text-center">Buy Now</a>
             </div>
         </div>
         @endforeach

@@ -7,3 +7,5 @@
 [x] DB Seed - 11/28
 [x] Setup Route / to Book Controller Index - 11/28
 [x] Cart HTML Template - 11/28
+[x] setup session cart - 11/28
+[] setup Debugger Tool - 11/28
