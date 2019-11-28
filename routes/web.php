@@ -16,5 +16,8 @@
 // });
 
 Route::get('/', 'BooksController@index');
+Route::get('/cart', function () {
+    return view('cart');
+});
 // Route::get('/todos/{todo}/edit', 'TodoController@edit')->name('todo.edit');
 // Route::get('/todos/{todo}/{slug}', 'TodoController@show')->name('todo.show');
