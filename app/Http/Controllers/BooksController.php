@@ -33,6 +33,13 @@ class BooksController extends Controller
             'books'=> $cart->items,
             'totalPrice'=> $cart->totalPrice,
             'totalQty'=>$cart->totalQty]);
+    }
 
+    public function clearCart()
+    {
+        if(session()->has('cart')){
+            session()->forget('cart');
+        }
+        return redirect()->action('BooksController@index');
     }
 }

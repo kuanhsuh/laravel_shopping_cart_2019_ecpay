@@ -18,3 +18,4 @@
 Route::get('/', 'BooksController@index');
 Route::get('/cart', 'BooksController@cart');
 Route::get('/add-to-cart/{id}', 'BooksController@getAddToCart');
+Route::get('/clear-cart', 'BooksController@clearCart');
