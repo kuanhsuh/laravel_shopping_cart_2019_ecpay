@@ -19,16 +19,16 @@
         <div class="flex justify-between items-center">
             <img src="https://via.placeholder.com/150x60" alt="">
             <ul class="flex">
-                <li class="mr-4 uppercase">Shop</li>
+                <li class="mr-4 uppercase"><a href="/">Shop</a></li>
                 <li class="mr-4 uppercase"><a href="/cart">Carts
-                    <span class="p-2 bg-blue-700 text-white rounded">
-                        @if(session()->has('cart'))
+                        <span class="p-2 bg-blue-700 text-white rounded">
+                            @if(session()->has('cart'))
                             {{session()->get('cart')->totalQty}}
-                        @else
+                            @else
                             0
-                        @endif
-                    </span>
-                </a>
+                            @endif
+                        </span>
+                    </a>
                 </li>
                 <li class="mr-4 uppercase">Orders</li>
             </ul>

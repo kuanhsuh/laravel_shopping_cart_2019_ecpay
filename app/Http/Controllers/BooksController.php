@@ -24,4 +24,15 @@ class BooksController extends Controller
         Session::put('cart', $cart);
         return redirect('/');
     }
+
+    public function cart()
+    {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        return view('cart',[
+            'books'=> $cart->items,
+            'totalPrice'=> $cart->totalPrice,
+            'totalQty'=>$cart->totalQty]);
+
+    }
 }

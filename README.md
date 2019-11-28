@@ -10,6 +10,6 @@
 [x] setup session cart - 11/28
 [x] setup Debugger Tool - 11/28
 [x] cart badge - 11/28
-[] setup cart page
+[x] setup cart page
 [] increase / decrease by one feature
-[] remove item feature
+[] clear Cart feature
