@@ -1,17 +1,18 @@
 # Shopping Cart
 
 
-[x] Setup DB - 11/27
-[x] Env Setup - 11/27
-[x] Shop HomePage - 11/27
-[x] DB Seed - 11/28
-[x] Setup Route / to Book Controller Index - 11/28
-[x] Cart HTML Template - 11/28
-[x] setup session cart - 11/28
-[x] setup Debugger Tool - 11/28
-[x] cart badge - 11/28
-[x] setup cart page 11/29
-[x] increase / decrease by one feature 11/29
-[x] clear Cart feature 11/29
-[] remove item from cart
+[x] Setup DB - 11/27/2019
+[x] Env Setup - 11/27/2019
+[x] Shop HomePage - 11/27/2019
+[x] DB Seed - 11/28/2019
+[x] Setup Route / to Book Controller Index - 11/28/2019
+[x] Cart HTML Template - 11/28/2019
+[x] setup session cart - 11/28/2019
+[x] setup Debugger Tool - 11/28/2019
+[x] cart badge - 11/28/2019
+[x] setup cart page 11/29/2019
+[x] increase / decrease by one feature 11/29/2019
+[x] clear Cart feature 11/29/2019
+[x] remove item from cart 11/30/2019
+[] optimize cart controller 11/30/2019
 [] setup Order Form

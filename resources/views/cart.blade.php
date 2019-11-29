@@ -24,7 +24,8 @@
                             href="/increase-one-item/{{$book['item']['id']}}">+</a>|
                         <a class="py-1 px-2 bg-red-300 text-white"
                             href="/decrease-one-item/{{$book['item']['id']}}">-</a>|
-                        <a class="py-1 px-2 bg-red-700 text-white uppercase" href="/remove-item">Remove</a></td>
+                        <a class="py-1 px-2 bg-red-700 text-white uppercase"
+                            href="/remove-item/{{$book['item']['id']}}">Remove</a></td>
                 </tr>
                 @endforeach
             </tbody>

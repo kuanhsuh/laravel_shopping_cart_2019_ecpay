@@ -54,6 +54,7 @@ class Cart
         // update total price
         $this->totalPrice += $this->items[$id]['item']['price'];
     }
+
     public function decreaseByOne($id)
     {
         // Get item from items based on $id
@@ -69,5 +70,17 @@ class Cart
         if($this->items[$id]['qty'] < 0) {
             unset($this->items[$id]);
         }
+    }
+
+    public function removeItem($id)
+    {
+        // Get item from items based on $id
+        // Update totalqty
+        $this->totalQty -= $this->items[$id]['qty'];
+
+        // update total price
+        $this->totalPrice -= $this->items[$id]['qty']*$this->items[$id]['price'];
+        // unset item
+        unset($this->items[$id]);
     }
 }

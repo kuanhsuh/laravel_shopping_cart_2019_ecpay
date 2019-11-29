@@ -53,6 +53,15 @@ class BooksController extends Controller
         return redirect()->action('BooksController@cart');
     }
 
+    public function removeItem($id)
+    {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->removeItem($id);
+        session()->put('cart', $cart);
+        return redirect()->action('BooksController@cart');
+    }
+
     public function clearCart()
     {
         if(session()->has('cart')){

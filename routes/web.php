@@ -19,5 +19,6 @@ Route::get('/', 'BooksController@index');
 Route::get('/cart', 'BooksController@cart');
 Route::get('/increase-one-item/{id}', 'BooksController@increaseByOne');
 Route::get('/decrease-one-item/{id}', 'BooksController@decreaseByOne');
+Route::get('/remove-item/{id}', 'BooksController@removeItem');
 Route::get('/add-to-cart/{id}', 'BooksController@getAddToCart');
 Route::get('/clear-cart', 'BooksController@clearCart');
