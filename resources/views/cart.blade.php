@@ -38,7 +38,7 @@
         <div class="flex justify-end mt-4">
             <a href="/clear-cart" class="mr-4 px-6 py-3 border border bg-white text-orange-600 border-orange-600">Clear
                 Cart</a>
-            <button class="text-white px-6 py-3 bg-orange-600">Buy Now</button>
+            <a href="/order/new" class="text-white px-6 py-3 bg-orange-600">Buy Now</a>
         </div>
     </div>
 </section>

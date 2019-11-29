@@ -14,5 +14,7 @@
 [x] increase / decrease by one feature 11/29/2019
 [x] clear Cart feature 11/29/2019
 [x] remove item from cart 11/30/2019
-[] optimize cart controller 11/30/2019
-[] setup Order Form
+[x] optimize cart controller 11/30/2019
+[x] setup Order Form 11/30/2019
+[] setup Order controller 
+[] setup view Order web view 
