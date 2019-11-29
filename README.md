@@ -11,5 +11,7 @@
 [x] setup Debugger Tool - 11/28
 [x] cart badge - 11/28
 [x] setup cart page 11/29
-[] increase / decrease by one feature
-[] clear Cart feature
+[x] increase / decrease by one feature 11/29
+[x] clear Cart feature 11/29
+[] remove item from cart
+[] setup Order Form

@@ -41,4 +41,33 @@ class Cart
         // update total Price
         $this->totalPrice += $item->price;
     }
+
+    public function increaseByOne($id)
+    {
+        // Get item from items based on $id
+        // Increase item qty by one
+        $this->items[$id]['qty']++;
+        // Update item price
+        $this->items[$id]['price'] += $this->items[$id]['item']['price'];
+        // Update totalqty
+        $this->totalQty++;
+        // update total price
+        $this->totalPrice += $this->items[$id]['item']['price'];
+    }
+    public function decreaseByOne($id)
+    {
+        // Get item from items based on $id
+        // Increase item qty by one
+        $this->items[$id]['qty']--;
+        // Update item price
+        $this->items[$id]['price'] -= $this->items[$id]['item']['price'];
+        // Update totalqty
+        $this->totalQty--;
+        // update total price
+        $this->totalPrice -= $this->items[$id]['item']['price'];
+        // unset item if qty < 0
+        if($this->items[$id]['qty'] < 0) {
+            unset($this->items[$id]);
+        }
+    }
 }

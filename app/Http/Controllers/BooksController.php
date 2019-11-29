@@ -35,6 +35,24 @@ class BooksController extends Controller
             'totalQty'=>$cart->totalQty]);
     }
 
+    public function increaseByOne($id)
+    {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->increaseByOne($id);
+        session()->put('cart', $cart);
+        return redirect()->action('BooksController@cart');
+    }
+
+    public function decreaseByOne($id)
+    {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->decreaseByOne($id);
+        session()->put('cart', $cart);
+        return redirect()->action('BooksController@cart');
+    }
+
     public function clearCart()
     {
         if(session()->has('cart')){
