@@ -37,8 +37,7 @@ class BooksController extends Controller
 
     public function increaseByOne($id)
     {
-        $oldCart = Session::has('cart') ? Session::get('cart') : null;
-        $cart = new Cart($oldCart);
+        $cart = new Cart(Session::get('cart'));
         $cart->increaseByOne($id);
         session()->put('cart', $cart);
         return redirect()->action('BooksController@cart');
@@ -46,8 +45,7 @@ class BooksController extends Controller
 
     public function decreaseByOne($id)
     {
-        $oldCart = Session::has('cart') ? Session::get('cart') : null;
-        $cart = new Cart($oldCart);
+        $cart = new Cart(Session::get('cart'));
         $cart->decreaseByOne($id);
         session()->put('cart', $cart);
         return redirect()->action('BooksController@cart');
@@ -55,8 +53,7 @@ class BooksController extends Controller
 
     public function removeItem($id)
     {
-        $oldCart = Session::has('cart') ? Session::get('cart') : null;
-        $cart = new Cart($oldCart);
+        $cart = new Cart(Session::get('cart'));
         $cart->removeItem($id);
         session()->put('cart', $cart);
         return redirect()->action('BooksController@cart');

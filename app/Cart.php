@@ -67,7 +67,7 @@ class Cart
         // update total price
         $this->totalPrice -= $this->items[$id]['item']['price'];
         // unset item if qty < 0
-        if($this->items[$id]['qty'] < 0) {
+        if($this->items[$id]['qty'] < 1) {
             unset($this->items[$id]);
         }
     }
