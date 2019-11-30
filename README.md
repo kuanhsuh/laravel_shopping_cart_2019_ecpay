@@ -16,5 +16,7 @@
 [x] remove item from cart 11/30/2019
 [x] optimize cart controller 11/30/2019
 [x] setup Order Form 11/30/2019
-[] setup Order controller 
-[] setup view Order web view 
+[x] setup Order controller Store & New
+[] Order Success Session Message
+[] setup view Order web view
+[] setup 綠界API store merchant API
