@@ -14,7 +14,9 @@
     <!-- Styles -->
 </head>
 
+
 <body class="font-sans text-xl">
+    @include('layouts.flash-msg')
     <nav class="container mx-auto">
         <div class="flex justify-between items-center">
             <img src="https://via.placeholder.com/150x60" alt="">
@@ -30,7 +32,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="mr-4 uppercase">Orders</li>
+                <li class="mr-4 uppercase"><a href="/orders">Orders</a></li>
             </ul>
         </div>
     </nav>

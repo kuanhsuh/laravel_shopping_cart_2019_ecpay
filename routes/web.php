@@ -24,3 +24,4 @@ Route::get('/add-to-cart/{id}', 'BooksController@getAddToCart');
 Route::get('/clear-cart', 'BooksController@clearCart');
 Route::get('/order/new', 'OrdersController@new');
 Route::post('/orders', 'OrdersController@store');
+Route::get('/orders', 'OrdersController@index');

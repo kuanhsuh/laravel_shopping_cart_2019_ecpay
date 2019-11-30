@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class OrdersController extends Controller
 {
+    public function index()
+    {
+        $orders = Orders::all();
+        return view('orders', compact('orders'));
+    }
     public function new()
     {
         $oldCart = session()->has('cart') ? session()->get('cart') : null;
