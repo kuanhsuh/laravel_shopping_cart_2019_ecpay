@@ -37,6 +37,8 @@
         </div>
     </nav>
     @yield('content')
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

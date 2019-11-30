@@ -18,5 +18,5 @@
 [x] setup Order Form 11/30/2019
 [x] setup Order controller Store & New
 [] Order Success Session Message
-[] setup view Order web view
+[x] setup view Order web view
 [] setup 綠界API store merchant API

@@ -36,6 +36,7 @@ class OrdersController extends Controller
             'cart' => serialize($cart)
             ]);
         session()->flash('success', 'Order success!');
+        session()->forget('cart');
         return redirect('/');
     }
 
