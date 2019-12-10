@@ -40,4 +40,8 @@ class OrdersController extends Controller
         return redirect('/');
     }
 
+    public function confirm(Orders $order) {
+        return view('confirm', compact('order'));
+    }
+
 }

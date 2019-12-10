@@ -10,10 +10,9 @@
                 <th class="px-4 py-2">User Info</th>
                 <th class="px-4 py-2">Order Info</th>
                 <th class="px-4 py-2">Total Price</th>
-                <th class="px-4 py-2">Show Details</th>
+                <!-- <th class="px-4 py-2">Order</th> -->
             </thead>
             <tbody class="text-center">
-                @foreach($orders as $order)
                 <tr>
                     <td class="border px-4 py-2">{{$order->id}}</td>
                     <td class="border px-4 py-2">{{$order->name}}</td>
@@ -25,10 +24,8 @@
                         </ul>
                     </td>
                     <td class="border px-4 py-2">{{unserialize($order->cart)->totalPrice}}</td>
-                    {{-- <td class="border px-4 py-2">{{$order->cart}}</td> --}}
-                    <td class="border px-4 py-2"><a href="#">Show</a></td>
+                    <!-- <td class="border px-4 py-2">{{$order->cart}}</td> -->
                 </tr>
-                @endforeach
             </tbody>
         </table>
     </div>

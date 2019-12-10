@@ -25,3 +25,4 @@ Route::get('/clear-cart', 'BooksController@clearCart');
 Route::get('/order/new', 'OrdersController@new');
 Route::post('/orders', 'OrdersController@store');
 Route::get('/orders', 'OrdersController@index');
+Route::get('/confirm-orders/{order}', 'OrdersController@confirm');
