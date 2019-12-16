@@ -11,6 +11,7 @@
                 <th class="px-4 py-2">Order Info</th>
                 <th class="px-4 py-2">Total Price</th>
                 <th class="px-4 py-2">Show Details</th>
+                <th class="px-4 py-2">paid</th>
             </thead>
             <tbody class="text-center">
                 @foreach($orders as $order)
@@ -27,6 +28,7 @@
                     <td class="border px-4 py-2">{{unserialize($order->cart)->totalPrice}}</td>
                     {{-- <td class="border px-4 py-2">{{$order->cart}}</td> --}}
                     <td class="border px-4 py-2"><a href="#">Show</a></td>
+                    <td class="border px-4 py-2">{{$order->paid}}</td>
                 </tr>
                 @endforeach
             </tbody>

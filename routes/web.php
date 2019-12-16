@@ -26,3 +26,5 @@ Route::get('/order/new', 'OrdersController@new');
 Route::post('/orders', 'OrdersController@store');
 Route::get('/orders', 'OrdersController@index');
 Route::get('/confirm-orders/{order}', 'OrdersController@confirm');
+Route::post('/callback', 'OrdersController@callback');
+Route::get('/success', 'OrdersController@redirectFromECpay');
